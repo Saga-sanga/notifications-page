@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { userData } from './interfaces'
 import Card from './Card'
 
-const data = [
+const data: userData[] = [
   {
     avatar: './src/assets/images/avatar-mark-webber.webp',
     content: 'Mark Webber reacted to your recent post My first tournament today!',
@@ -44,15 +45,20 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="min-h-screen">
-      <main className='min-h-[97vh]'>
-        <div className='flex flex-row'>
-          <div>Notifications 3</div> 
+    <div className="min-h-screen grid place-content-center">
+      <main className='min-h-[97vh] px-3 py-4 bg-white'>
+        <div className='flex flex-row justify-between items-end'>
+          <div className='flex gap-2'><span className='text-very-dark-blue font-extrabold'>Notifications</span> <span className='bg-blue text-white text-sm px-2.5 self-baseline rounded'>3</span></div> 
 
-          <div>Mark all as read</div>         
+          <div className='text-xs text-grayish-blue'>Mark all as read</div>         
         </div>
         <section>
-          <Card/>
+          {
+            data.map((info: userData, index: number) => 
+              <Card key={index} info={info}/>
+            )
+          }
+          
         </section>
       </main>
 

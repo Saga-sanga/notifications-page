@@ -1,9 +1,13 @@
-import React from "react";
 
-export default function Card() {
+import { userData } from './interfaces'
+
+export default function Card({info}: {info: userData}) {
   return (
-    <div>
-      This is a card
+    <div className="">
+      <div>
+        {info.content}
+      </div>
+      {`${info.time} ago`}
     </div>
   )
 }
