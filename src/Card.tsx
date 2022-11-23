@@ -3,9 +3,9 @@ import { userData } from './interfaces'
 
 export default function Card({info}: {info: userData}) {
   return (
-    <div className="rounded flex flex-row gap-3 p-4 items-start">
+    <div className="rounded flex flex-row gap-3 p-4 items-start text-sm">
       <div>
-        <img width="32" src={info.avatar} alt={`${info.name}'s avatar`} />
+        <img width="38" src={info.avatar} alt={`${info.name}'s avatar`} />
       </div>
 
       <div>
@@ -17,7 +17,11 @@ export default function Card({info}: {info: userData}) {
           }
         </div>
         <span className='text-grayish-blue'>{`${info.time} ago`}</span>
-        
+        {
+          info.message ? 
+          <div className='text-dark-grayish-blue rounded border-solid border-2 border-light-grayish-blue-2 p-3 mt-2'>{info.message}</div> 
+          : ''
+        }
       </div>
     </div>
   )

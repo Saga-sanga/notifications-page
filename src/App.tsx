@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { userData } from './interfaces'
 import Card from './Card'
 
@@ -65,9 +65,9 @@ function App() {
     <div className="min-h-screen grid place-content-center">
       <main className='min-h-[97vh] px-3 py-4 bg-white'>
         <div className='flex flex-row justify-between items-end'>
-          <div className='flex gap-2'>
-            <span className='text-very-dark-blue font-extrabold'>Notifications</span> 
-            <span className='bg-blue text-white text-sm px-2.5 self-baseline rounded'>3</span>
+          <div className='flex gap-2 items-center'>
+            <span className='text-very-dark-blue text-xl font-extrabold'>Notifications</span> 
+            <span className='bg-blue text-white text-sm px-2.5 rounded'>3</span>
           </div> 
 
           <div className='text-xs text-dark-grayish-blue'>Mark all as read</div>         
