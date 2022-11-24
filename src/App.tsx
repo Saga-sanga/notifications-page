@@ -21,7 +21,8 @@ const data: userData[] = [
   {
     name: 'Jcob Thompson',
     avatar: './src/assets/images/avatar-jacob-thompson.webp',
-    content: 'has joined your group Chess Club',
+    content: 'has joined your group',
+    group: 'Chess Club',
     time: '1 day',
     read: false
   },
@@ -52,7 +53,8 @@ const data: userData[] = [
   {
     name: 'Anna Kim',
     avatar: './src/assets/images/avatar-anna-kim.webp',
-    content: 'left the group Chess Club',
+    content: 'left the group',
+    group: 'Chess Club',
     time: '2 weeks',
     read: true
   }
@@ -63,7 +65,7 @@ function App() {
 
   return (
     <div className="min-h-screen grid place-content-center">
-      <main className='min-h-[97vh] px-3 py-4 bg-white'>
+      <main className='min-h-[97vh] pt-4 py-5 bg-white flex flex-col gap-5'>
         <div className='flex flex-row justify-between items-end'>
           <div className='flex gap-2 items-center'>
             <span className='text-very-dark-blue text-xl font-extrabold'>Notifications</span> 
@@ -72,7 +74,7 @@ function App() {
 
           <div className='text-xs text-dark-grayish-blue'>Mark all as read</div>         
         </div>
-        <section>
+        <section className='flex flex-col gap-3'>
           {
             data.map((info: userData, index: number) => 
               <Card key={index} info={info}/>

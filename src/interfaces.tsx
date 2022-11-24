@@ -6,5 +6,6 @@ export interface userData {
   picture?: string;
   time: string;
   message?: string;
+  group?: string;
   read: boolean;
 }
