@@ -64,30 +64,32 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="min-h-screen grid place-content-center">
-      <main className='min-h-[97vh] pt-4 py-5 bg-white flex flex-col gap-5'>
-        <div className='flex flex-row justify-between items-end'>
-          <div className='flex gap-2 items-center'>
-            <span className='text-very-dark-blue text-xl font-extrabold'>Notifications</span> 
-            <span className='bg-blue text-white text-sm px-2.5 rounded'>3</span>
-          </div> 
+    <>
+      <div className="min-h-[97vh] grid place-content-center sm:bg-very-light-grayish-blue sm:bg-opacity-80">
+        <main className='pt-5 px-5 sm:m-8 bg-white flex flex-col gap-5 max-w-xl rounded-xl'>
+          <div className='flex flex-row justify-between items-end'>
+            <div className='flex gap-2 items-center'>
+              <span className='text-very-dark-blue text-xl font-extrabold'>Notifications</span> 
+              <span className='bg-blue text-white text-sm px-2.5 rounded'>3</span>
+            </div> 
 
-          <div className='text-xs text-dark-grayish-blue'>Mark all as read</div>         
-        </div>
-        <section className='flex flex-col gap-3'>
-          {
-            data.map((info: userData, index: number) => 
-              <Card key={index} info={info}/>
-            )
-          }       
-        </section>
-      </main>
+            <div className='text-sm text-dark-grayish-blue cursor-pointer hover:text-blue'>Mark all as read</div>         
+          </div>
+          <section className='flex flex-col gap-3'>
+            {
+              data.map((info: userData, index: number) => 
+                <Card key={index} info={info}/>
+              )
+            }       
+          </section>
+        </main>
 
-      <footer className="attribution">
+      </div>
+      <footer className="attribution relative bottom-0">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Your Name Here</a>.
       </footer>
-    </div>
+    </>
   )
 }
 
