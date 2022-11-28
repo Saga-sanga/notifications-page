@@ -75,11 +75,11 @@ function App() {
   return (
     <>
       <div className="min-h-[97vh] grid place-content-center sm:bg-very-light-grayish-blue sm:bg-opacity-80">
-        <main className='pt-5 px-5 sm:m-8 bg-white flex flex-col gap-5 max-w-xl rounded-xl'>
+        <main className='pt-5 px-5 sm:m-8 bg-white flex flex-col gap-5 max-w-[39rem] rounded-xl'>
           <div className='flex flex-row justify-between items-end'>
             <div className='flex gap-2 items-center'>
-              <span className='text-very-dark-blue text-xl font-extrabold'>Notifications</span> 
-              <span className='bg-blue text-white text-sm px-2.5 rounded'>3</span>
+              <span className='text-very-dark-blue text-2xl font-extrabold'>Notifications</span> 
+              <span className='bg-blue text-white font-extrabold text-sm px-2.5 pt-[1px] pb-[2px] rounded'>3</span>
             </div> 
 
             <div className='text-sm text-dark-grayish-blue cursor-pointer hover:text-blue'>Mark all as read</div>         

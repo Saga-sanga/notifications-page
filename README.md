@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/notifications-page-d1q84zgfI0)
+- Live Site URL: [GitHub Pages](https://saga-sanga.github.io/notifications-page/)
 
 ## My process
 
