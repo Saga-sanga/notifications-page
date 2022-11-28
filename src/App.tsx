@@ -1,11 +1,19 @@
 // import { useState } from 'react'
+import markWebber from './assets/images/avatar-mark-webber.webp';
+import angelaGray from './assets/images/avatar-angela-gray.webp';
+import jacobThompson from './assets/images/avatar-jacob-thompson.webp';
+import rizky from './assets/images/avatar-rizky-hasanuddin.webp';
+import kimberly from './assets/images/avatar-kimberly-smith.webp';
+import nathan from './assets/images/avatar-nathan-peterson.webp';
+import anna from './assets/images/avatar-anna-kim.webp';
+
 import { userData } from './interfaces'
 import Card from './Card'
 
 const data: userData[] = [
   {
     name: 'Mark Webber',
-    avatar: '/assets/images/avatar-mark-webber.webp',
+    avatar: markWebber,
     content: 'reacted to your recent post',
     post: 'My first tournament today!',
     time: '1m',
@@ -13,14 +21,14 @@ const data: userData[] = [
   },
   {
     name: 'Angela Gray',
-    avatar: '/assets/images/avatar-angela-gray.webp',
+    avatar: angelaGray,
     content: 'followed you',
     time: '5m',
     read: false
   },
   {
     name: 'Jcob Thompson',
-    avatar: '/assets/images/avatar-jacob-thompson.webp',
+    avatar: jacobThompson,
     content: 'has joined your group',
     group: 'Chess Club',
     time: '1 day',
@@ -28,7 +36,7 @@ const data: userData[] = [
   },
   {
     name: 'Rizky Hasanuddin',
-    avatar: '/assets/images/avatar-rizky-hasanuddin.webp',
+    avatar: rizky,
     content: 'sent you a private message',
     time: '5 days',
     message: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
@@ -36,7 +44,7 @@ const data: userData[] = [
   },
   {
     name: 'Kimberly Smith',
-    avatar: '/assets/images/avatar-kimberly-smith.webp',
+    avatar: kimberly,
     content: 'commented on your picture',
     picture: '/assets/images/image-chess.webp',
     time: '1 week',
@@ -44,7 +52,7 @@ const data: userData[] = [
   },
   {
     name: 'Nathan Peterson',
-    avatar: '/assets/images/avatar-nathan-peterson.webp',
+    avatar: nathan,
     content: 'reacted to your recent post',
     post: '5 end-game strategies to increase your win rate',
     time: '2 weeks',
@@ -52,7 +60,7 @@ const data: userData[] = [
   },
   {
     name: 'Anna Kim',
-    avatar: '/assets/images/avatar-anna-kim.webp',
+    avatar: anna,
     content: 'left the group',
     group: 'Chess Club',
     time: '2 weeks',
