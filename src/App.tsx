@@ -5,7 +5,7 @@ import Card from './Card'
 const data: userData[] = [
   {
     name: 'Mark Webber',
-    avatar: './src/assets/images/avatar-mark-webber.webp',
+    avatar: '/assets/images/avatar-mark-webber.webp',
     content: 'reacted to your recent post',
     post: 'My first tournament today!',
     time: '1m',
@@ -13,14 +13,14 @@ const data: userData[] = [
   },
   {
     name: 'Angela Gray',
-    avatar: './src/assets/images/avatar-angela-gray.webp',
+    avatar: '/assets/images/avatar-angela-gray.webp',
     content: 'followed you',
     time: '5m',
     read: false
   },
   {
     name: 'Jcob Thompson',
-    avatar: './src/assets/images/avatar-jacob-thompson.webp',
+    avatar: '/assets/images/avatar-jacob-thompson.webp',
     content: 'has joined your group',
     group: 'Chess Club',
     time: '1 day',
@@ -28,7 +28,7 @@ const data: userData[] = [
   },
   {
     name: 'Rizky Hasanuddin',
-    avatar: './src/assets/images/avatar-rizky-hasanuddin.webp',
+    avatar: '/assets/images/avatar-rizky-hasanuddin.webp',
     content: 'sent you a private message',
     time: '5 days',
     message: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
@@ -36,15 +36,15 @@ const data: userData[] = [
   },
   {
     name: 'Kimberly Smith',
-    avatar: './src/assets/images/avatar-kimberly-smith.webp',
+    avatar: '/assets/images/avatar-kimberly-smith.webp',
     content: 'commented on your picture',
-    picture: './src/assets/images/image-chess.webp',
+    picture: '/assets/images/image-chess.webp',
     time: '1 week',
     read: true
   },
   {
     name: 'Nathan Peterson',
-    avatar: './src/assets/images/avatar-nathan-peterson.webp',
+    avatar: '/assets/images/avatar-nathan-peterson.webp',
     content: 'reacted to your recent post',
     post: '5 end-game strategies to increase your win rate',
     time: '2 weeks',
@@ -52,7 +52,7 @@ const data: userData[] = [
   },
   {
     name: 'Anna Kim',
-    avatar: './src/assets/images/avatar-anna-kim.webp',
+    avatar: '/assets/images/avatar-anna-kim.webp',
     content: 'left the group',
     group: 'Chess Club',
     time: '2 weeks',
