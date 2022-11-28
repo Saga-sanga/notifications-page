@@ -10,6 +10,8 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -45,6 +47,28 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - [Vite](https://vitejs.dev/) - ViteJS
 - [Tailwindcss](https://tailwindcss.com/) - For styles
+
+### What I learned
+
+This is my first project created using Typescript and Vite. A TypeScript feature I used was interfaces. I learnt that interfaces and types are very similar in use case although they have certain differences.
+
+```js
+export interface userData {
+  name: string;
+  avatar: string;
+  content: string;
+  post?: string;
+  picture?: string;
+  time: string;
+  message?: string;
+  group?: string;
+  read: boolean;
+}
+```
+
+### Useful resources
+
+- [Tyepscript Lang](https://www.typescriptlang.org/play#example/types-vs-interfaces) - This helped me get an understanding between the differences between types and interfaces. It is a very detailed, concise overview of them both.
 
 ## Author
 
