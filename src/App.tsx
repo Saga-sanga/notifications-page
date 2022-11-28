@@ -79,7 +79,7 @@ function App() {
           <div className='flex flex-row justify-between items-end'>
             <div className='flex gap-2 items-center'>
               <span className='text-very-dark-blue text-2xl font-extrabold'>Notifications</span> 
-              <span className='bg-blue text-white font-extrabold text-sm px-2.5 pt-[1px] pb-[2px] rounded'>3</span>
+              <span className='bg-blue text-white text-base font-extrabold px-2.5 pt-[1px] pb-[2px] rounded'>3</span>
             </div> 
 
             <div className='text-sm text-dark-grayish-blue cursor-pointer hover:text-blue'>Mark all as read</div>         
