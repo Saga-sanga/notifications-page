@@ -6,6 +6,7 @@ import rizky from './assets/images/avatar-rizky-hasanuddin.webp';
 import kimberly from './assets/images/avatar-kimberly-smith.webp';
 import nathan from './assets/images/avatar-nathan-peterson.webp';
 import anna from './assets/images/avatar-anna-kim.webp';
+import chessPic from './assets/images/image-chess.webp';
 
 import { userData } from './interfaces'
 import Card from './Card'
@@ -46,7 +47,7 @@ const data: userData[] = [
     name: 'Kimberly Smith',
     avatar: kimberly,
     content: 'commented on your picture',
-    picture: '/assets/images/image-chess.webp',
+    picture: chessPic,
     time: '1 week',
     read: true
   },
